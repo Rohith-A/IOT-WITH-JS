@@ -12,19 +12,19 @@ board.on("ready", () => {
   led.pulse({
     easing: "linear",
     duration: 3000,
-    cuePoints: [0, 0.2, 0.4, 0.6, 0.8, 1],
-    keyFrames: [100, 10, 0, 50, 0, 555],
+    cuePoints: [0, 0.8, 0.4, 0.6, 0.8, 1],
+    keyFrames: [100, 100, 0, 50, 0, 555],
     onstop() {
       console.log("Animation stopped");
-    }
+    },
   });
-
+  led.pulse();
   // Stop and turn off the led pulse loop after
   // 12 seconds (shown in ms)
   board.wait(12000, () => {
 
     // stop() terminates the interval
     // off() shuts the led off
-    led.stop().off();
+    // led.stop().off();
   });
 });
