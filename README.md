@@ -2,7 +2,7 @@
 
 To start coding with Arduino you need a Arduino UNO board which is good for beginners
 
-We will user Jhonny-five as a JS library to code for Arduino
+We will use Jhonny-five as a JS library to code for Arduino
 Before starting with Jhonny five we need to set up our board. Follow the below steps
 1. connect board to one of the port
 2. Login/signup to Arduino https://store.arduino.cc/digital/create use web editor to flash the board
